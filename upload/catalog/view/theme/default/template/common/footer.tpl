@@ -44,10 +44,10 @@
 </footer>
 
 <!--
-OpenCart is open source software and you are free to remove the powered by OpenCart if you want, but its generally accepted practise to make a small donation.
-Please donate via PayPal to donate@opencart.com
+Code4Fun is open source software and you are free to remove the powered by Code4Fun if you want, but its generally accepted practise to make a small donation.
+Please donate via PayPal to donate@Code4Fun.com
 //-->
 
-<!-- Theme created by Welford Media for OpenCart 2.0 www.welfordmedia.co.uk -->
+<!-- Theme created by Welford Media for Code4Fun 2.0 www.welfordmedia.co.uk -->
 
 </body></html>

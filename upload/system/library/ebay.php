@@ -43,7 +43,7 @@ final class Ebay {
 				$domain = HTTPS_SERVER;
 			}
 
-			$data = array('token' => $this->token, 'secret' => $this->secret, 'server' => $this->server, 'domain' => $domain, 'openbay_version' => (int)$this->config->get('openbay_version'), 'opencart_version' => VERSION, 'data' => $post, 'content_type' => $content_type, 'language' => $this->config->get('openbay_language'));
+			$data = array('token' => $this->token, 'secret' => $this->secret, 'server' => $this->server, 'domain' => $domain, 'openbay_version' => (int)$this->config->get('openbay_version'), 'Code4Fun_version' => VERSION, 'data' => $post, 'content_type' => $content_type, 'language' => $this->config->get('openbay_language'));
 
 			$defaults = array(
 				CURLOPT_POST            => 1,
@@ -112,7 +112,7 @@ final class Ebay {
 				$domain = HTTPS_SERVER;
 			}
 
-			$data = array('token' => $this->token, 'secret' => $this->secret, 'server' => $this->server, 'domain' => $domain, 'openbay_version' => (int)$this->config->get('openbay_version'), 'opencart_version' => VERSION, 'data' => $post, 'content_type' => $content_type, 'language' => $this->config->get('openbay_language'));
+			$data = array('token' => $this->token, 'secret' => $this->secret, 'server' => $this->server, 'domain' => $domain, 'openbay_version' => (int)$this->config->get('openbay_version'), 'Code4Fun_version' => VERSION, 'data' => $post, 'content_type' => $content_type, 'language' => $this->config->get('openbay_language'));
 
 			$defaults = array(
 				CURLOPT_POST            => 1,
@@ -541,11 +541,11 @@ final class Ebay {
 			$openstock = true;
 		}
 
-		// Get the active OpenCart items that were linked to eBay If they have stock now, relist them.
+		// Get the active Code4Fun items that were linked to eBay If they have stock now, relist them.
 		$ended_data = $this->getEndedListingArray();
 
 		/**
-		 * Get the active OpenCart items that are also linked
+		 * Get the active Code4Fun items that are also linked
 		 * Compare against the stock from eBay
 		 * If listing active and local stock = 0, end it
 		 * If listing inactive, remove link

@@ -203,7 +203,7 @@ class ControllerPaymentPPProIframe extends Controller {
 		$s_data['BUTTONCODE'] = 'TOKEN';
 
 		$s_data['BUTTONLANGUAGE'] = 'en';
-		$s_data['BUTTONSOURCE'] = 'OpenCart_2.0_HSS';
+		$s_data['BUTTONSOURCE'] = 'Code4Fun_2.0_HSS';
 
 		$s_data['USER'] = $this->config->get('pp_pro_iframe_user');
 		$s_data['SIGNATURE'] = $this->config->get('pp_pro_iframe_sig');

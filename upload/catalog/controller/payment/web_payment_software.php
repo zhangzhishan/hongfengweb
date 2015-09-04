@@ -96,7 +96,7 @@ class ControllerPaymentWebPaymentSoftware extends Controller {
 		//create object to use as json
 		$json = array();
 
-		//If successful log transaction in opencart system
+		//If successful log transaction in Code4Fun system
 		if ('00' === (string)$xml->response_code) {
 			$message = '';
 

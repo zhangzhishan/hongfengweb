@@ -181,7 +181,7 @@ class ModelPaymentSecureTradingPp extends Model {
 			CURLOPT_FORBID_REUSE => 1,
 			CURLOPT_TIMEOUT => 15,
 			CURLOPT_HTTPHEADER => array(
-				'User-Agent: OpenCart - Secure Trading PP',
+				'User-Agent: Code4Fun - Secure Trading PP',
 				'Content-Length: ' . strlen($data),
 				'Authorization: Basic ' . base64_encode($this->config->get('securetrading_pp_webservice_username') . ':' . $this->config->get('securetrading_pp_webservice_password')),
 			),

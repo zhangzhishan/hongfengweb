@@ -88,7 +88,7 @@ class ModelPaymentFirstdataRemote extends Model {
 								$xml .= '<v1:OrderId>' . $order_ref . '</v1:OrderId>';
 								$xml .= '<v1:Ip>' . $order_info['ip'] . '</v1:Ip>';
 								$xml .= '<v1:TransactionOrigin>ECI</v1:TransactionOrigin>';
-								$xml .= '<v1:PONumber>OPENCART2.0' . VERSION . '</v1:PONumber>';
+								$xml .= '<v1:PONumber>Code4Fun2.0' . VERSION . '</v1:PONumber>';
 							$xml .= '</v1:TransactionDetails>';
 
 							$xml .= '<v1:Billing>';

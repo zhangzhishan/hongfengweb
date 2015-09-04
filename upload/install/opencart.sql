@@ -1,7 +1,7 @@
 -- --------------------------------------------------------
 
 --
--- Database: `opencart`
+-- Database: `Code4Fun`
 --
 
 -- --------------------------------------------------------
@@ -3053,7 +3053,7 @@ INSERT INTO `oc_setting` (`setting_id`, `store_id`, `code`, `key`, `value`, `ser
 (178, 0, 'config', 'config_image', '', 0),
 (177, 0, 'config', 'config_fax', '', 0),
 (176, 0, 'config', 'config_telephone', '123456789', 0),
-(175, 0, 'config', 'config_email', 'demo@opencart.com', 0),
+(175, 0, 'config', 'config_email', 'demo@Code4Fun.com', 0),
 (174, 0, 'config', 'config_geocode', '', 0),
 (172, 0, 'config', 'config_owner', 'Your Name', 0),
 (173, 0, 'config', 'config_address', 'Address 1', 0),

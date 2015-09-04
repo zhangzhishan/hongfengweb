@@ -318,7 +318,7 @@ class ModelOpenbayEbayOrder extends Model{
 				if ($this->config->get('ebay_email_brand_disable') == 1) {
 					$data['text_powered'] = '';
 				} else {
-					$data['text_powered'] = '<a href="http://www.openbaypro.com/">OpenBay Pro - eBay and Amazon order management for OpenCart</a> . ';
+					$data['text_powered'] = '<a href="http://www.openbaypro.com/">OpenBay Pro - eBay and Amazon order management for Code4Fun</a> . ';
 				}
 
 				$data['logo'] = HTTPS_SERVER  . 'image/' . $this->config->get('config_logo');

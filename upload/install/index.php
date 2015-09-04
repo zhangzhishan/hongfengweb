@@ -5,12 +5,12 @@ error_reporting(E_ALL);
 // HTTP
 $protocol = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off' || $_SERVER['SERVER_PORT'] == 443) ? "https://" : "http://";
 define('HTTP_SERVER', $protocol . $_SERVER['HTTP_HOST'] . rtrim(dirname($_SERVER['SCRIPT_NAME']), '/.\\') . '/');
-define('HTTP_OPENCART', $protocol . $_SERVER['HTTP_HOST'] . rtrim(rtrim(dirname($_SERVER['SCRIPT_NAME']), 'install'), '/.\\') . '/');
+define('HTTP_Code4Fun', $protocol . $_SERVER['HTTP_HOST'] . rtrim(rtrim(dirname($_SERVER['SCRIPT_NAME']), 'install'), '/.\\') . '/');
 
 // DIR
 define('DIR_APPLICATION', str_replace('\\', '/', realpath(dirname(__FILE__))) . '/');
 define('DIR_SYSTEM', str_replace('\\', '/', realpath(dirname(__FILE__) . '/../')) . '/system/');
-define('DIR_OPENCART', str_replace('\\', '/', realpath(DIR_APPLICATION . '../')) . '/');
+define('DIR_Code4Fun', str_replace('\\', '/', realpath(DIR_APPLICATION . '../')) . '/');
 define('DIR_MODIFICATION', DIR_SYSTEM . 'modification/');
 define('DIR_LANGUAGE', DIR_APPLICATION . 'language/');
 define('DIR_TEMPLATE', DIR_APPLICATION . 'view/template/');
@@ -59,7 +59,7 @@ if (file_exists('../config.php')) {
 	if (filesize('../config.php') > 0) {
 		$upgrade = true;
 
-		$lines = file(DIR_OPENCART . 'config.php');
+		$lines = file(DIR_Code4Fun . 'config.php');
 
 		foreach ($lines as $line) {
 			if (strpos(strtoupper($line), 'DB_') !== false) {

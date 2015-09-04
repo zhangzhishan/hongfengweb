@@ -193,7 +193,7 @@ $(document).ready(function() {
 		$('[data-toggle=\'tooltip\']').tooltip({container: 'body'});
 	});
 	
-	// https://github.com/opencart/opencart/issues/2595
+	// https://github.com/Code4Fun/Code4Fun/issues/2595
 	$.event.special.remove = {
 		remove: function(o) {
 			if (o.handler) { 

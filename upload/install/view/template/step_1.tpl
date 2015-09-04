@@ -8,7 +8,7 @@
           <small><?php echo $heading_step_1_small; ?></small></h3>
       </div>
       <div class="col-sm-6">
-        <div id="logo" class="pull-right hidden-xs"> <img src="view/image/logo.png" alt="OpenCart" title="OpenCart" /> </div>
+        <div id="logo" class="pull-right hidden-xs"> <img src="view/image/logo.png" alt="Code4Fun" title="Code4Fun" /> </div>
       </div>
     </div>
   </header>

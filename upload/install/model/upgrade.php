@@ -1,11 +1,11 @@
 <?php
 class ModelUpgrade extends Model {
 	public function mysql() {
-		// Upgrade script to opgrade opencart to the latest version.
+		// Upgrade script to opgrade Code4Fun to the latest version.
 		// Oldest version supported is 1.3.2
 
 		// Load the sql file
-		$file = DIR_APPLICATION . 'opencart.sql';
+		$file = DIR_APPLICATION . 'Code4Fun.sql';
 
 		if (!file_exists($file)) {
 			exit('Could not load sql file: ' . $file);

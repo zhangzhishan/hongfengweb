@@ -7,7 +7,7 @@ class ControllerPaymentSkrill extends Controller {
 
 		$data['button_confirm'] = $this->language->get('button_confirm');
 
-		$data['action'] = 'https://www.moneybookers.com/app/payment.pl?p=OpenCart';
+		$data['action'] = 'https://www.moneybookers.com/app/payment.pl?p=Code4Fun';
 
 		$data['pay_to_email'] = $this->config->get('skrill_email');
 		$data['platform'] = '31974336';

@@ -2,7 +2,7 @@
 /**
  * Modifcation XML Documentation can be found here:
  *
- * https://github.com/opencart/opencart/wiki/Modification-System
+ * https://github.com/Code4Fun/Code4Fun/wiki/Modification-System
  */
 class ControllerExtensionModification extends Controller {
 	private $error = array();

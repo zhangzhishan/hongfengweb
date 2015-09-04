@@ -31,14 +31,14 @@ class Amazonus {
 			CURLOPT_POST            => 1,
 			CURLOPT_HEADER          => 0,
 			CURLOPT_URL             => $this->url . $method,
-			CURLOPT_USERAGENT       => 'OpenBay Pro for Amazonus/Opencart',
+			CURLOPT_USERAGENT       => 'OpenBay Pro for Amazonus/Code4Fun',
 			CURLOPT_FRESH_CONNECT   => 1,
 			CURLOPT_RETURNTRANSFER  => 1,
 			CURLOPT_FORBID_REUSE    => 1,
 			CURLOPT_TIMEOUT         => 30,
 			CURLOPT_SSL_VERIFYPEER  => 0,
 			CURLOPT_SSL_VERIFYHOST  => 0,
-			CURLOPT_POSTFIELDS      => 'token=' . $this->token . '&data=' . rawurlencode($crypt) . '&opencart_version=' . VERSION,
+			CURLOPT_POSTFIELDS      => 'token=' . $this->token . '&data=' . rawurlencode($crypt) . '&Code4Fun_version=' . VERSION,
 		);
 		$ch = curl_init();
 
@@ -64,14 +64,14 @@ class Amazonus {
 			CURLOPT_POST => 1,
 			CURLOPT_HEADER => 0,
 			CURLOPT_URL => $this->url . $method,
-			CURLOPT_USERAGENT => 'OpenBay Pro for Amazonus/Opencart',
+			CURLOPT_USERAGENT => 'OpenBay Pro for Amazonus/Code4Fun',
 			CURLOPT_FRESH_CONNECT => 1,
 			CURLOPT_RETURNTRANSFER => 1,
 			CURLOPT_FORBID_REUSE => 1,
 			CURLOPT_TIMEOUT => 2,
 			CURLOPT_SSL_VERIFYPEER => 0,
 			CURLOPT_SSL_VERIFYHOST => 0,
-			CURLOPT_POSTFIELDS => 'token=' . $this->token . '&data=' . rawurlencode($crypt) . '&opencart_version=' . VERSION,
+			CURLOPT_POSTFIELDS => 'token=' . $this->token . '&data=' . rawurlencode($crypt) . '&Code4Fun_version=' . VERSION,
 		);
 		$ch = curl_init();
 

@@ -334,7 +334,7 @@ class ControllerPaymentKlarnaInvoice extends Controller {
 
 				$transaction = array(
 					'4.1',
-					'API:OPENCART:' . VERSION,
+					'API:Code4Fun:' . VERSION,
 					$pno,
 					$gender,
 					'',

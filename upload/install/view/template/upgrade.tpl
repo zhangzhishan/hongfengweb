@@ -2,7 +2,7 @@
 <div class="container">
   <header>
     <div class="row">
-      <div class="col-sm-12"><img src="view/image/logo.png" alt="OpenCart" title="OpenCart" /></div>
+      <div class="col-sm-12"><img src="view/image/logo.png" alt="Code4Fun" title="Code4Fun" /></div>
     </div>
   </header>
   <h1>Upgrade</h1>

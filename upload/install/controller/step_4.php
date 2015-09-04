@@ -85,7 +85,7 @@ class ControllerStep4 extends Controller {
 		$defaults = array(
 			CURLOPT_POST => 1,
 			CURLOPT_HEADER => 0,
-			CURLOPT_URL => 'http://www.opencart.com/index.php?route=extension/json/extensions',
+			CURLOPT_URL => 'http://www.Code4Fun.com/index.php?route=extension/json/extensions',
 			CURLOPT_USERAGENT => "Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.8.1.1) Gecko/20061204 Firefox/2.0.0.1",
 			CURLOPT_FRESH_CONNECT => 1,
 			CURLOPT_RETURNTRANSFER => 1,
@@ -111,7 +111,7 @@ class ControllerStep4 extends Controller {
 		$defaults = array(
 			CURLOPT_POST => 1,
 			CURLOPT_HEADER => 0,
-			CURLOPT_URL => 'http://www.opencart.com/index.php?route=extension/json/languages',
+			CURLOPT_URL => 'http://www.Code4Fun.com/index.php?route=extension/json/languages',
 			CURLOPT_USERAGENT => "Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.8.1.1) Gecko/20061204 Firefox/2.0.0.1",
 			CURLOPT_FRESH_CONNECT => 1,
 			CURLOPT_RETURNTRANSFER => 1,

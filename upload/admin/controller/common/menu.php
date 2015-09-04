@@ -47,7 +47,7 @@ class ControllerCommonMenu extends Controller {
 		$data['text_option'] = $this->language->get('text_option');
 		$data['text_order'] = $this->language->get('text_order');
 		$data['text_order_status'] = $this->language->get('text_order_status');
-		$data['text_opencart'] = $this->language->get('text_opencart');
+		$data['text_Code4Fun'] = $this->language->get('text_Code4Fun');
 		$data['text_payment'] = $this->language->get('text_payment');
 		$data['text_product'] = $this->language->get('text_product');
 		$data['text_reports'] = $this->language->get('text_reports');

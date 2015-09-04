@@ -1,7 +1,7 @@
 /////////////////////////////////
-///       OpenCart V2.0.x     ///
+///       Code4Fun V2.0.x     ///
 ///    Install Instructions   ///
-///  http://www.opencart.com  ///
+///  http://www.Code4Fun.com  ///
 /////////////////////////////////
 
 
@@ -73,7 +73,7 @@ These instructions are for a manual installation using FTP, cPanel or other web 
 
 - Local Install -
 
-There are many all-in-one web servers out there and most of them should work with OpenCart out of the box. Some examples...
+There are many all-in-one web servers out there and most of them should work with Code4Fun out of the box. Some examples...
 
 http://www.apachefriends.org/en/xampp.html
 http://www.ampps.com/

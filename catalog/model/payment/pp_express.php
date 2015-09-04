@@ -32,7 +32,7 @@ class ModelPaymentPPExpress extends Model {
 			'PWD' => $password,
 			'SIGNATURE' => $signature,
 			'VERSION' => '109.0',
-			'BUTTONSOURCE' => 'OpenCart_2.0_EC',
+			'BUTTONSOURCE' => 'Code4Fun_2.0_EC',
 		);
 
 		$this->log($data, 'Call data');

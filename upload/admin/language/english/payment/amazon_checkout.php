@@ -25,8 +25,8 @@ $_['text_amazon_details']			= 'Amazon Details';
 $_['text_amazon_order_id']			= 'Amazon Order ID';
 $_['text_upload']					= 'Upload';
 $_['text_upload_template']			= 'Upload the filled in template by clicking on the button below. Make sure it is saved as a tab-delimited file.';
-$_['text_amazon_checkout']			= '<a onclick="window.open(\'http://go.amazonservices.com/UKCBASPOpenCart.html\');"><img src="view/image/payment/amazon.png" alt="Checkout by Amazon" title="Checkout by Amazon" style="border: 1px solid #EEEEEE;" /></a>';
-$_['text_amazon_join']				= 'To create your Checkout by Amazon account <a href="http://go.amazonservices.com/UKCBASPOpenCart.html" target="_blank" title="Click here to join Checkout by Amazon" class="alert-link">click here.</a>';
+$_['text_amazon_checkout']			= '<a onclick="window.open(\'http://go.amazonservices.com/UKCBASPCode4Fun.html\');"><img src="view/image/payment/amazon.png" alt="Checkout by Amazon" title="Checkout by Amazon" style="border: 1px solid #EEEEEE;" /></a>';
+$_['text_amazon_join']				= 'To create your Checkout by Amazon account <a href="http://go.amazonservices.com/UKCBASPCode4Fun.html" target="_blank" title="Click here to join Checkout by Amazon" class="alert-link">click here.</a>';
 
 // Column
 $_['column_submission_id']			= 'Submission ID';

@@ -10,23 +10,23 @@ class ControllerStep3 extends Controller {
 
 			$output  = '<?php' . "\n";
 			$output .= '// HTTP' . "\n";
-			$output .= 'define(\'HTTP_SERVER\', \'' . HTTP_OPENCART . '\');' . "\n\n";
+			$output .= 'define(\'HTTP_SERVER\', \'' . HTTP_Code4Fun . '\');' . "\n\n";
 
 			$output .= '// HTTPS' . "\n";
-			$output .= 'define(\'HTTPS_SERVER\', \'' . HTTP_OPENCART . '\');' . "\n\n";
+			$output .= 'define(\'HTTPS_SERVER\', \'' . HTTP_Code4Fun . '\');' . "\n\n";
 
 			$output .= '// DIR' . "\n";
-			$output .= 'define(\'DIR_APPLICATION\', \'' . DIR_OPENCART . 'catalog/\');' . "\n";
-			$output .= 'define(\'DIR_SYSTEM\', \'' . DIR_OPENCART . 'system/\');' . "\n";
-			$output .= 'define(\'DIR_LANGUAGE\', \'' . DIR_OPENCART . 'catalog/language/\');' . "\n";
-			$output .= 'define(\'DIR_TEMPLATE\', \'' . DIR_OPENCART . 'catalog/view/theme/\');' . "\n";
-			$output .= 'define(\'DIR_CONFIG\', \'' . DIR_OPENCART . 'system/config/\');' . "\n";
-			$output .= 'define(\'DIR_IMAGE\', \'' . DIR_OPENCART . 'image/\');' . "\n";
-			$output .= 'define(\'DIR_CACHE\', \'' . DIR_OPENCART . 'system/cache/\');' . "\n";
-			$output .= 'define(\'DIR_DOWNLOAD\', \'' . DIR_OPENCART . 'system/download/\');' . "\n";
-			$output .= 'define(\'DIR_UPLOAD\', \'' . DIR_OPENCART . 'system/upload/\');' . "\n";
-			$output .= 'define(\'DIR_MODIFICATION\', \'' . DIR_OPENCART . 'system/modification/\');' . "\n";
-			$output .= 'define(\'DIR_LOGS\', \'' . DIR_OPENCART . 'system/logs/\');' . "\n\n";
+			$output .= 'define(\'DIR_APPLICATION\', \'' . DIR_Code4Fun . 'catalog/\');' . "\n";
+			$output .= 'define(\'DIR_SYSTEM\', \'' . DIR_Code4Fun . 'system/\');' . "\n";
+			$output .= 'define(\'DIR_LANGUAGE\', \'' . DIR_Code4Fun . 'catalog/language/\');' . "\n";
+			$output .= 'define(\'DIR_TEMPLATE\', \'' . DIR_Code4Fun . 'catalog/view/theme/\');' . "\n";
+			$output .= 'define(\'DIR_CONFIG\', \'' . DIR_Code4Fun . 'system/config/\');' . "\n";
+			$output .= 'define(\'DIR_IMAGE\', \'' . DIR_Code4Fun . 'image/\');' . "\n";
+			$output .= 'define(\'DIR_CACHE\', \'' . DIR_Code4Fun . 'system/cache/\');' . "\n";
+			$output .= 'define(\'DIR_DOWNLOAD\', \'' . DIR_Code4Fun . 'system/download/\');' . "\n";
+			$output .= 'define(\'DIR_UPLOAD\', \'' . DIR_Code4Fun . 'system/upload/\');' . "\n";
+			$output .= 'define(\'DIR_MODIFICATION\', \'' . DIR_Code4Fun . 'system/modification/\');' . "\n";
+			$output .= 'define(\'DIR_LOGS\', \'' . DIR_Code4Fun . 'system/logs/\');' . "\n\n";
 
 			$output .= '// DB' . "\n";
 			$output .= 'define(\'DB_DRIVER\', \'' . addslashes($this->request->post['db_driver']) . '\');' . "\n";
@@ -37,7 +37,7 @@ class ControllerStep3 extends Controller {
 			$output .= 'define(\'DB_PORT\', \'' . addslashes($this->request->post['db_port']) . '\');' . "\n";
 			$output .= 'define(\'DB_PREFIX\', \'' . addslashes($this->request->post['db_prefix']) . '\');' . "\n";
 
-			$file = fopen(DIR_OPENCART . 'config.php', 'w');
+			$file = fopen(DIR_Code4Fun . 'config.php', 'w');
 
 			fwrite($file, $output);
 
@@ -45,26 +45,26 @@ class ControllerStep3 extends Controller {
 
 			$output  = '<?php' . "\n";
 			$output .= '// HTTP' . "\n";
-			$output .= 'define(\'HTTP_SERVER\', \'' . HTTP_OPENCART . 'admin/\');' . "\n";
-			$output .= 'define(\'HTTP_CATALOG\', \'' . HTTP_OPENCART . '\');' . "\n\n";
+			$output .= 'define(\'HTTP_SERVER\', \'' . HTTP_Code4Fun . 'admin/\');' . "\n";
+			$output .= 'define(\'HTTP_CATALOG\', \'' . HTTP_Code4Fun . '\');' . "\n\n";
 
 			$output .= '// HTTPS' . "\n";
-			$output .= 'define(\'HTTPS_SERVER\', \'' . HTTP_OPENCART . 'admin/\');' . "\n";
-			$output .= 'define(\'HTTPS_CATALOG\', \'' . HTTP_OPENCART . '\');' . "\n\n";
+			$output .= 'define(\'HTTPS_SERVER\', \'' . HTTP_Code4Fun . 'admin/\');' . "\n";
+			$output .= 'define(\'HTTPS_CATALOG\', \'' . HTTP_Code4Fun . '\');' . "\n\n";
 
 			$output .= '// DIR' . "\n";
-			$output .= 'define(\'DIR_APPLICATION\', \'' . DIR_OPENCART . 'admin/\');' . "\n";
-			$output .= 'define(\'DIR_SYSTEM\', \'' . DIR_OPENCART . 'system/\');' . "\n";
-			$output .= 'define(\'DIR_LANGUAGE\', \'' . DIR_OPENCART . 'admin/language/\');' . "\n";
-			$output .= 'define(\'DIR_TEMPLATE\', \'' . DIR_OPENCART . 'admin/view/template/\');' . "\n";
-			$output .= 'define(\'DIR_CONFIG\', \'' . DIR_OPENCART . 'system/config/\');' . "\n";
-			$output .= 'define(\'DIR_IMAGE\', \'' . DIR_OPENCART . 'image/\');' . "\n";
-			$output .= 'define(\'DIR_CACHE\', \'' . DIR_OPENCART . 'system/cache/\');' . "\n";
-			$output .= 'define(\'DIR_DOWNLOAD\', \'' . DIR_OPENCART . 'system/download/\');' . "\n";
-			$output .= 'define(\'DIR_UPLOAD\', \'' . DIR_OPENCART . 'system/upload/\');' . "\n";
-			$output .= 'define(\'DIR_LOGS\', \'' . DIR_OPENCART . 'system/logs/\');' . "\n";
-			$output .= 'define(\'DIR_MODIFICATION\', \'' . DIR_OPENCART . 'system/modification/\');' . "\n";
-			$output .= 'define(\'DIR_CATALOG\', \'' . DIR_OPENCART . 'catalog/\');' . "\n\n";
+			$output .= 'define(\'DIR_APPLICATION\', \'' . DIR_Code4Fun . 'admin/\');' . "\n";
+			$output .= 'define(\'DIR_SYSTEM\', \'' . DIR_Code4Fun . 'system/\');' . "\n";
+			$output .= 'define(\'DIR_LANGUAGE\', \'' . DIR_Code4Fun . 'admin/language/\');' . "\n";
+			$output .= 'define(\'DIR_TEMPLATE\', \'' . DIR_Code4Fun . 'admin/view/template/\');' . "\n";
+			$output .= 'define(\'DIR_CONFIG\', \'' . DIR_Code4Fun . 'system/config/\');' . "\n";
+			$output .= 'define(\'DIR_IMAGE\', \'' . DIR_Code4Fun . 'image/\');' . "\n";
+			$output .= 'define(\'DIR_CACHE\', \'' . DIR_Code4Fun . 'system/cache/\');' . "\n";
+			$output .= 'define(\'DIR_DOWNLOAD\', \'' . DIR_Code4Fun . 'system/download/\');' . "\n";
+			$output .= 'define(\'DIR_UPLOAD\', \'' . DIR_Code4Fun . 'system/upload/\');' . "\n";
+			$output .= 'define(\'DIR_LOGS\', \'' . DIR_Code4Fun . 'system/logs/\');' . "\n";
+			$output .= 'define(\'DIR_MODIFICATION\', \'' . DIR_Code4Fun . 'system/modification/\');' . "\n";
+			$output .= 'define(\'DIR_CATALOG\', \'' . DIR_Code4Fun . 'catalog/\');' . "\n\n";
 
 			$output .= '// DB' . "\n";
 			$output .= 'define(\'DB_DRIVER\', \'' . addslashes($this->request->post['db_driver']) . '\');' . "\n";
@@ -75,7 +75,7 @@ class ControllerStep3 extends Controller {
 			$output .= 'define(\'DB_PORT\', \'' . addslashes($this->request->post['db_port']) . '\');' . "\n";
 			$output .= 'define(\'DB_PREFIX\', \'' . addslashes($this->request->post['db_prefix']) . '\');' . "\n";
 
-			$file = fopen(DIR_OPENCART . 'admin/config.php', 'w');
+			$file = fopen(DIR_Code4Fun . 'admin/config.php', 'w');
 
 			fwrite($file, $output);
 
@@ -285,12 +285,12 @@ class ControllerStep3 extends Controller {
 			$this->error['email'] = $this->language->get('error_email');
 		}
 
-		if (!is_writable(DIR_OPENCART . 'config.php')) {
-			$this->error['warning'] = $this->language->get('error_config') . DIR_OPENCART . 'config.php!';
+		if (!is_writable(DIR_Code4Fun . 'config.php')) {
+			$this->error['warning'] = $this->language->get('error_config') . DIR_Code4Fun . 'config.php!';
 		}
 
-		if (!is_writable(DIR_OPENCART . 'admin/config.php')) {
-			$this->error['warning'] = $this->language->get('error_config') . DIR_OPENCART . 'admin/config.php!';
+		if (!is_writable(DIR_Code4Fun . 'admin/config.php')) {
+			$this->error['warning'] = $this->language->get('error_config') . DIR_Code4Fun . 'admin/config.php!';
 		}
 
 		return !$this->error;

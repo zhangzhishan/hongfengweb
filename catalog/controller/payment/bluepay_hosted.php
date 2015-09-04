@@ -19,7 +19,7 @@ class ControllerPaymentBluePayHostedForm extends Controller {
 		$data['PHONE'] = $order_info['telephone'];
 		$data['EMAIL'] = $order_info['email'];
 
-		$data['SHPF_FORM_ID'] = 'opencart01';
+		$data['SHPF_FORM_ID'] = 'Code4Fun01';
 		$data['DBA'] = $this->config->get('bluepay_hosted_account_name');
 		$data['MERCHANT'] = $this->config->get('bluepay_hosted_account_id');
 		$data['SHPF_ACCOUNT_ID'] = $this->config->get('bluepay_hosted_account_id');

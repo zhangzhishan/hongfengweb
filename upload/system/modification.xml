@@ -3,8 +3,8 @@
   <name>Modification Default</name>
   <code>default</code>
   <version>1.0</version>
-  <author>OpenCart Ltd</author>
-  <link>http://www.opencart.com</link>
+  <author>Code4Fun Ltd</author>
+  <link>http://www.Code4Fun.com</link>
   <file path="system/engine/action.php,system/engine/loader.php,system/library/config.php,system/library/language.php">
 	<operation>
       <search regex="true">

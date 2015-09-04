@@ -268,7 +268,7 @@ class ModelPaymentSecureTradingWs extends Model {
 			CURLOPT_FORBID_REUSE => 1,
 			CURLOPT_TIMEOUT => 15,
 			CURLOPT_HTTPHEADER => array(
-				'User-Agent: OpenCart - Secure Trading WS',
+				'User-Agent: Code4Fun - Secure Trading WS',
 				'Authorization: Basic ' . base64_encode($this->config->get('securetrading_ws_csv_username') . ':' . $this->config->get('securetrading_ws_csv_password')),
 			),
 			CURLOPT_POSTFIELDS => $this->encodePost($post_data),
@@ -324,7 +324,7 @@ class ModelPaymentSecureTradingWs extends Model {
 			CURLOPT_FORBID_REUSE => 1,
 			CURLOPT_TIMEOUT => 15,
 			CURLOPT_HTTPHEADER => array(
-				'User-Agent: OpenCart - Secure Trading WS',
+				'User-Agent: Code4Fun - Secure Trading WS',
 				'Content-Length: ' . strlen($data),
 				'Authorization: Basic ' . base64_encode($this->config->get('securetrading_ws_username') . ':' . $this->config->get('securetrading_ws_password')),
 			),
