@@ -1,9 +1,9 @@
 <?php
 // HTTP
-define('HTTP_SERVER', 'http://23.236.55.124/');
+define('HTTP_SERVER', 'http://localhost/');
 
 // HTTPS
-define('HTTPS_SERVER', 'http://23.236.55.124/');
+define('HTTPS_SERVER', 'http://localhost/');
 
 // DIR
 define('DIR_APPLICATION', '/home/wwwroot/default/catalog/');
@@ -22,7 +22,7 @@ define('DIR_LOGS', '/home/wwwroot/default/system/logs/');
 define('DB_DRIVER', 'mpdo');
 define('DB_HOSTNAME', 'localhost');
 define('DB_USERNAME', 'root');
-define('DB_PASSWORD', 'killbill');
+define('DB_PASSWORD', '');
 define('DB_DATABASE', 'outdoor');
 define('DB_PORT', '3306');
 define('DB_PREFIX', 'oc_');
