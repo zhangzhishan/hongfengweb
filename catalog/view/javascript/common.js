@@ -96,9 +96,9 @@ $(document).ready(function() {
 	$('#list-view').click(function() {
 		$('#content .product-layout > .clearfix').remove();
 
-		//$('#content .product-layout').attr('class', 'product-layout product-list col-xs-12');
+		 //$('#content .product-layout').attr('class', 'product-layout product-list col-xs-12');
 		$('#content .row > .product-layout').attr('class', 'product-layout product-list col-xs-12');
-		
+
 		localStorage.setItem('display', 'list');
 	});
 
@@ -112,7 +112,7 @@ $(document).ready(function() {
 		if (cols == 2) {
 			$('#content .product-layout').attr('class', 'product-layout product-grid col-lg-6 col-md-6 col-sm-12 col-xs-12');
 		} else if (cols == 1) {
-			$('#content .product-layout').attr('class', 'product-layout product-grid col-lg-4 col-md-4 col-sm-6 col-xs-12');
+			$('#content .product-layout').attr('class', 'product-layout product-grid col-lg-4 col-md-4 col-sm-6 col-xs-6');
 		} else {
 			$('#content .product-layout').attr('class', 'product-layout product-grid col-lg-3 col-md-3 col-sm-6 col-xs-12');
 		}
@@ -159,11 +159,13 @@ var cart = {
 				if (json['success']) {
 					$('#content').parent().before('<div class="alert alert-success"><i class="fa fa-check-circle"></i> ' + json['success'] + '<button type="button" class="close" data-dismiss="alert">&times;</button></div>');
 					
+					$('.nav-container').after('<div class="container alert alert-success"><i class="fa fa-check-circle"></i> ' + json['success'] + '<button type="button" class="close" data-dismiss="alert">&times;</button></div>');
+
 					// Need to set timeout otherwise it wont update the total
 					setTimeout(function () {
-						$('#cart > button').html('<span id="cart-total"><i class="fa fa-shopping-cart"></i> ' + json['total'] + '</span>');
+						$('#cart > button').html('<span class="carticon"> </span>' + '<span id="cart-total"><i class="fa fa-shopping-cart"></i> ' + json['total'] + '</span>' + '<i class="fa fa-angle-down"></i>');
 					}, 100);
-				
+
 					$('html, body').animate({ scrollTop: 0 }, 'slow');
 
 					$('#cart > ul').load('index.php?route=common/cart/info ul li');
@@ -186,7 +188,7 @@ var cart = {
 			success: function(json) {
 				// Need to set timeout otherwise it wont update the total
 				setTimeout(function () {
-					$('#cart > button').html('<span id="cart-total"><i class="fa fa-shopping-cart"></i> ' + json['total'] + '</span>');
+					$('#cart > button').html('<span class="carticon"> </span>' + '<span id="cart-total"><i class="fa fa-shopping-cart"></i> ' + json['total'] + '</span>' + '<i class="fa fa-angle-down"></i>');
 				}, 100);
 
 				if (getURLVar('route') == 'checkout/cart' || getURLVar('route') == 'checkout/checkout') {
@@ -212,9 +214,9 @@ var cart = {
 			success: function(json) {
 				// Need to set timeout otherwise it wont update the total
 				setTimeout(function () {
-					$('#cart > button').html('<span id="cart-total"><i class="fa fa-shopping-cart"></i> ' + json['total'] + '</span>');
+					$('#cart > button').html('<span class="carticon"> </span>' + '<span id="cart-total"><i class="fa fa-shopping-cart"></i> ' + json['total'] + '</span>' + '<i class="fa fa-angle-down"></i>');
 				}, 100);
-					
+
 				if (getURLVar('route') == 'checkout/cart' || getURLVar('route') == 'checkout/checkout') {
 					location = 'index.php?route=checkout/cart';
 				} else {
@@ -242,9 +244,9 @@ var voucher = {
 				$('#cart > button').button('reset');
 			},
 			success: function(json) {
-				// Need to set timeout otherwise it wont update the total
+					// Need to set timeout otherwise it wont update the total
 				setTimeout(function () {
-					$('#cart > button').html('<span id="cart-total"><i class="fa fa-shopping-cart"></i> ' + json['total'] + '</span>');
+					$('#cart > button').html('<span class="carticon"> </span>' + '<span id="cart-total"><i class="fa fa-shopping-cart"></i> ' + json['total'] + '</span>' + '<i class="fa fa-angle-down"></i>');
 				}, 100);
 
 				if (getURLVar('route') == 'checkout/cart' || getURLVar('route') == 'checkout/checkout') {
@@ -276,7 +278,7 @@ var wishlist = {
 				}
 
 				$('#wishlist-total span').html(json['total']);
-				$('#wishlist-total').attr('title', json['total']);
+	 			$('#wishlist-total').attr('title', json['total']);
 
 				$('html, body').animate({ scrollTop: 0 }, 'slow');
 			}
@@ -368,7 +370,7 @@ $(document).delegate('.agree', 'click', function(e) {
 			});
 			
 			// Keydown
-			$(this).on('keydown', function(event) {
+			$(this).on('keydown', function() {
 				switch(event.keyCode) {
 					case 27: // escape
 						this.hide();

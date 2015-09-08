@@ -42,6 +42,12 @@ class ControllerCommonFooter extends Controller {
 		$data['order'] = $this->url->link('account/order', '', 'SSL');
 		$data['wishlist'] = $this->url->link('account/wishlist', '', 'SSL');
 		$data['newsletter'] = $this->url->link('account/newsletter', '', 'SSL');
+		
+		
+		$data['footertop'] = $this->load->controller('common/footertop');
+		$data['footerbottom'] = $this->load->controller('common/footerbottom');
+		$data['footerleft'] = $this->load->controller('common/footerleft');
+		$data['footerright'] = $this->load->controller('common/footerright');
 
 		$data['powered'] = sprintf($this->language->get('text_powered'), $this->config->get('config_name'), date('Y', time()));
 
@@ -69,6 +75,11 @@ class ControllerCommonFooter extends Controller {
 
 			$this->model_tool_online->whosonline($ip, $this->customer->getId(), $url, $referer);
 		}
+		
+		$data['footertop'] = $this->load->controller('common/footertop');
+		$data['footerbottom'] = $this->load->controller('common/footerbottom');
+		$data['footerleft'] = $this->load->controller('common/footerleft');
+		$data['footerright'] = $this->load->controller('common/footerright');
 
 		if (file_exists(DIR_TEMPLATE . $this->config->get('config_template') . '/template/common/footer.tpl')) {
 			return $this->load->view($this->config->get('config_template') . '/template/common/footer.tpl', $data);
