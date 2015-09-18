@@ -69,7 +69,7 @@
         <?php } ?>
         <li class="divider"></li>
         <li class="dropdown-header"><?php echo $text_help; ?> <i class="fa fa-life-ring"></i></li>
-        <li><a href="http://www.Code4Fun.com" target="_blank"><?php echo $text_homepage; ?></a></li>
+        <li><a href="http://www.Code4Fun.me" target="_blank"><?php echo $text_homepage; ?></a></li>
         <li><a href="http://docs.Code4Fun.com" target="_blank"><?php echo $text_documentation; ?></a></li>
         <li><a href="http://forum.Code4Fun.com" target="_blank"><?php echo $text_support; ?></a></li>
       </ul>
