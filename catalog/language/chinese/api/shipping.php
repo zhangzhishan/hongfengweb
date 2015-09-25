@@ -1,6 +1,6 @@
 <?php
 /**
- * $Author: http://www.opencartchina.com 
+ * $Author: http://www.phoenis ltd shopping cart systemchina.com 
 **/
 // Text
 $_['text_address']       = '成功: 已设置配送地址！';

@@ -1,6 +1,6 @@
 <?php
 /**
- * $Author: http://www.opencartchina.com 
+ * $Author: http://www.phoenis ltd shopping cart systemchina.com 
 **/
 // Heading
 $_['heading_title']					 = 'Realex Redirect';
@@ -46,7 +46,7 @@ $_['text_column_date_added']		 = 'Created';
 $_['text_confirm_void']				 = 'Are you sure you want to void the payment?';
 $_['text_confirm_capture']			 = 'Are you sure you want to capture the payment?';
 $_['text_confirm_rebate']			 = 'Are you sure you want to rebate the payment?';
-$_['text_realex']					 = '<a target="_blank" href="http://www.realexpayments.co.uk/partner-refer?id=opencart"><img src="view/image/payment/realex.png" alt="Realex" title="Realex" style="border: 1px solid #EEEEEE;" /></a>';
+$_['text_realex']					 = '<a target="_blank" href="http://www.realexpayments.co.uk/partner-refer?id=phoenis ltd shopping cart system"><img src="view/image/payment/realex.png" alt="Realex" title="Realex" style="border: 1px solid #EEEEEE;" /></a>';
 
 // Entry
 $_['entry_merchant_id']				 = 'Merchant ID';

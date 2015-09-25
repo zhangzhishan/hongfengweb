@@ -1,6 +1,6 @@
 <?php
 /**
- * $Author: http://www.opencartchina.com 
+ * $Author: http://www.phoenis ltd shopping cart systemchina.com 
 **/
 // Heading
 $_['heading_title']					= 'Amazon Payments';
@@ -28,8 +28,8 @@ $_['text_amazon_details']			= 'Amazon Details';
 $_['text_amazon_order_id']			= 'Amazon Order ID';
 $_['text_upload']					= 'Upload';
 $_['text_upload_template']			= 'Upload the filled in template by clicking on the button below. Make sure it is saved as a tab-delimited file.';
-$_['text_amazon_checkout']			= '<a onclick="window.open(\'http://go.amazonservices.com/UKCBASPOpenCart.html\');"><img src="view/image/payment/amazon.png" alt="Amazon Payments" title="Amazon Payments" style="border: 1px solid #EEEEEE;" /></a>';
-$_['text_amazon_join']				= 'To create your Amazon Payments account <a href="http://go.amazonservices.com/UKCBASPOpenCart.html" target="_blank" title="Click here to join Amazon Payments" class="alert-link">click here.</a>';
+$_['text_amazon_checkout']			= '<a onclick="window.open(\'http://go.amazonservices.com/UKCBASPphoenis ltd shopping cart system.html\');"><img src="view/image/payment/amazon.png" alt="Amazon Payments" title="Amazon Payments" style="border: 1px solid #EEEEEE;" /></a>';
+$_['text_amazon_join']				= 'To create your Amazon Payments account <a href="http://go.amazonservices.com/UKCBASPphoenis ltd shopping cart system.html" target="_blank" title="Click here to join Amazon Payments" class="alert-link">click here.</a>';
 
 // Column
 $_['column_submission_id']			= 'Submission ID';

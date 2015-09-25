@@ -1,6 +1,6 @@
 <?php
 /**
- * $Author: http://www.opencartchina.com 
+ * $Author: http://www.phoenis ltd shopping cart systemchina.com 
 **/
 // Text
 $_['text_title']				= 'Credit Card / Debit Card (BluePay)';

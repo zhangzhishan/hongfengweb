@@ -1,6 +1,6 @@
 <?php
 /**
- * $Author: http://www.opencartchina.com 
+ * $Author: http://www.phoenis ltd shopping cart systemchina.com 
 **/
 // Text
 $_['text_approve_subject']      = '%s - 您的加盟会员账户已被激活！';

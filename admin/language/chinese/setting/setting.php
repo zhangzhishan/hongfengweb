@@ -1,6 +1,6 @@
 <?php
 /**
- * $Author: http://www.opencartchina.com 
+ * $Author: http://www.phoenis ltd shopping cart systemchina.com 
 **/
 // Heading
 $_['heading_title']                    = '系统设置';
@@ -180,7 +180,7 @@ $_['help_affiliate_mail']              = '加盟会员注册时发送邮件给�
 $_['help_return']                      = '退货时强制会员同意的条款。';
 $_['help_return_status']               = '当退货申请提交后，默认退货状态。';
 $_['help_icon']                        = 'Icon图标必须为尺寸 16px x 16px 的PNG图片。';
-$_['help_ftp_root']                    = '您安装OpenCart系统时安装所在目录，一般在 \'public_html/\'。';
+$_['help_ftp_root']                    = '您安装phoenis ltd shopping cart system系统时安装所在目录，一般在 \'public_html/\'。';
 $_['help_mail_protocol']               = '只需选择\'MAIL\' 除非您的主机已禁用PHP的邮件功能。';
 $_['help_mail_parameter']              = '当使用 \'MAIL\', 在此可增加额外的邮件地址(如 "-femail@storeaddress.com"。';
 $_['help_mail_smtp_hostname']          = '如果需要安全链接，则在前面添加 \'tls://\' 前缀。 (例如 tls://smtp.gmail.com).';

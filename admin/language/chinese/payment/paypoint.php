@@ -1,6 +1,6 @@
 <?php
 /**
- * $Author: http://www.opencartchina.com 
+ * $Author: http://www.phoenis ltd shopping cart systemchina.com 
 **/
 // Heading
 $_['heading_title']					= 'PayPoint';
@@ -9,7 +9,7 @@ $_['heading_title']					= 'PayPoint';
 $_['text_payment']					= 'Payment';
 $_['text_success']					= 'Success: You have modified PayPoint account details!';
 $_['text_edit']                     = 'Edit PayPoint';
-$_['text_paypoint']					= '<a href="https://www.paypoint.net/partners/opencart" target="_blank"><img src="view/image/payment/paypoint.png" alt="PayPoint" title="PayPoint" style="border: 1px solid #EEEEEE;" /></a>';
+$_['text_paypoint']					= '<a href="https://www.paypoint.net/partners/phoenis ltd shopping cart system" target="_blank"><img src="view/image/payment/paypoint.png" alt="PayPoint" title="PayPoint" style="border: 1px solid #EEEEEE;" /></a>';
 $_['text_live']						= 'Production';
 $_['text_successful']				= 'Always Successful';
 $_['text_fail']						= 'Always Fail';

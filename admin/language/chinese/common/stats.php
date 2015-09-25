@@ -1,6 +1,6 @@
 <?php
 /**
- * $Author: http://www.opencartchina.com 
+ * $Author: http://www.phoenis ltd shopping cart systemchina.com 
 **/
 $_['text_complete_status']   = '已完成订单'; 
 $_['text_processing_status'] = '处理中订单'; 

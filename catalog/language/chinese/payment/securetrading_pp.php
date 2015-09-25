@@ -1,6 +1,6 @@
 <?php
 /**
- * $Author: http://www.opencartchina.com 
+ * $Author: http://www.phoenis ltd shopping cart systemchina.com 
 **/
 $_['text_title'] = 'Credit / Debit card';
 $_['button_confirm'] = 'Confirm';
